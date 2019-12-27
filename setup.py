@@ -8,7 +8,9 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 install_requires = [
-    'slackclient~=2.5.0',
+    'slackclient==1.3.1',
+    # TODO: delete this
+    'websocket-client==0.54.0',
     'requests',
     'BeautifulSoup4',
     'apscheduler',
